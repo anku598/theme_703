@@ -1,0 +1,36 @@
+<template>
+  <div id="app">
+    <router-view />
+  </div>
+</template>
+
+<style lang='scss'>
+$primary-color: #ff4900;
+.active-tab-703 {
+  background: $primary-color !important;
+  color: #fff !important;
+  border: none !important;
+  transition: all 0.3s ease-in-out !important ;
+}
+
+.tab_703 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 1.2rem 1rem !important;
+  border: none !important;
+  outline: none !important;
+
+  &:hover {
+    border: none !important;
+  }
+  img {
+    margin-right: 20px;
+  }
+}
+
+.nav-tab-703 {
+  border-bottom: 0px solid #000 !important;
+  border-top: 2px solid $primary-color;
+}
+</style>
