@@ -21,16 +21,31 @@ $primary-color: #ff4900;
   border: none !important;
   outline: none !important;
 
+  @media (max-width: 767.98px) {
+    padding: 0.5rem 0.8rem !important;
+    margin-right: 15px !important;
+  }
+
   &:hover {
     border: none !important;
   }
   img {
     margin-right: 20px;
+
+    @media (max-width: 767.98px) {
+      margin-right: 13px;
+      width: 16px;
+    }
   }
 }
 
 .nav-tab-703 {
   border-bottom: 0px solid #000 !important;
   border-top: 2px solid $primary-color;
+  @media (max-width: 767.98px) {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    border-top: 0px solid $primary-color;
+  }
 }
 </style>
