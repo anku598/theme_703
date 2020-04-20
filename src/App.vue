@@ -96,6 +96,8 @@ $font-open-sans: 'Open Sans', sans-serif;
   @media (max-width: 767.98px) {
     padding: 0.5rem 0.8rem !important;
     margin-right: 15px !important;
+    font-size: 0.8rem;
+    min-width: 181px;
   }
 
   &:hover {
@@ -128,6 +130,10 @@ $font-open-sans: 'Open Sans', sans-serif;
     content: '';
     left: 50%;
     transform: translateX(-50%);
+
+    @media (max-width: 576.98px) {
+      width: 75px;
+    }
   }
 }
 

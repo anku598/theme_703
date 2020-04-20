@@ -2,18 +2,18 @@
   <div class="hold_theme_30">
     <header>
       <img class="header_bg" src="../assets/img/header-bg.png" alt />
-      <b-container fluid class="wrapper_padding">
+      <b-container fluid class="wrapper_padding header_section">
         <b-row>
           <b-col sm="12" cols="12" md="8" lg="8" xl="8">
             <div class="profile-info">
-              <b-row>
-                <b-col md="2" lg="2" xl="2" sm="2" cols="2">
+              <b-row class="hold_on_mobile">
+                <b-col md="2" lg="2" xl="2" sm="3" cols="4">
                   <div class="pro_pic">
                     <img src="@/assets/img/profile_pic.png" alt="Profile pic" />
                   </div>
                 </b-col>
 
-                <b-col md="9" xl="9" lg="9" sm="9" cols="9" class="d-flex">
+                <b-col md="9" xl="9" lg="9" sm="6" cols="8" class="d-flex">
                   <div class="name_details">
                     <h3 class="title">Beverly Andrews</h3>
                     <p class="designation">User interface designer</p>
@@ -31,7 +31,7 @@
                     </div>
                   </div>
 
-                  <!-- <div class="contact_media">
+                  <div class="contact_media">
                     <div class="icon location">
                       <img src="../assets/img/location_icon.svg" alt />
                     </div>
@@ -43,7 +43,7 @@
                     <div class="icon google_plus">
                       <img src="../assets/img/google-plus 3.svg" alt />
                     </div>
-                  </div>-->
+                  </div>
                 </b-col>
               </b-row>
             </div>
@@ -153,27 +153,27 @@
           <div class="tab_component_wrapper">
             <div class="portfolio-work">
               <b-row>
-                <b-col md="4" lg="4" xl="3" sm="6" cols="12" class="p-3">
+                <b-col md="4" lg="4" xl="4" sm="12" cols="12" class="p-3">
                   <img src="../assets/img/portfolio-one.png" alt />
                 </b-col>
 
-                <b-col md="4" lg="4" xl="3" sm="6" cols="12" class="p-3">
+                <b-col md="4" lg="4" xl="4" sm="12" cols="12" class="p-3">
                   <img src="../assets/img/portfolio-two.jpg" alt />
                 </b-col>
 
-                <b-col md="4" lg="4" xl="3" sm="6" cols="12" class="p-3">
+                <b-col md="4" lg="4" xl="4" sm="12" cols="12" class="p-3">
                   <img src="../assets/img/portfolio-three.jpg" alt />
                 </b-col>
 
-                <b-col md="4" lg="4" xl="3" sm="6" cols="12" class="p-3">
+                <b-col md="4" lg="4" xl="4" sm="12" cols="12" class="p-3">
                   <img src="../assets/img/portfolio-four.png" alt />
                 </b-col>
 
-                <b-col md="4" lg="4" xl="3" sm="6" cols="12" class="p-3">
+                <b-col md="4" lg="4" xl="4" sm="12" cols="12" class="p-3">
                   <img src="../assets/img/portfolio-three.jpg" alt />
                 </b-col>
 
-                <b-col class="p-3" md="4" lg="4" xl="3" sm="6" cols="12">
+                <b-col class="p-3" md="4" lg="4" xl="4" sm="12" cols="12">
                   <img src="../assets/img/portfolio-four.png" alt />
                 </b-col>
               </b-row>
@@ -188,16 +188,7 @@
 
           <div class="tab_component_wrapper">
             <b-row>
-              <b-col
-                lg="5"
-                md="5"
-                xl="5"
-                sm="12"
-                cols="12"
-                offset-lg="1"
-                offset-md="1"
-                offset-xl="1"
-              >
+              <b-col lg="5" md="12" xl="5" sm="12" cols="12" offset-lg="1" offset-xl="1">
                 <div class="timeline_details">
                   <div class="timeline_title_section">
                     <h3 class="t-title">Google</h3>
@@ -216,16 +207,7 @@
                 </div>
               </b-col>
 
-              <b-col
-                lg="5"
-                md="5"
-                xl="5"
-                sm="12"
-                cols="12"
-                offset-lg="1"
-                offset-md="1"
-                offset-xl="1"
-              >
+              <b-col lg="5" md="12" xl="5" sm="12" cols="12" offset-lg="1" offset-xl="1">
                 <div class="timeline_details">
                   <div class="timeline_title_section">
                     <h3 class="t-title">Google</h3>
@@ -244,16 +226,7 @@
                 </div>
               </b-col>
 
-              <b-col
-                lg="5"
-                md="5"
-                xl="5"
-                sm="12"
-                cols="12"
-                offset-lg="1"
-                offset-md="1"
-                offset-xl="1"
-              >
+              <b-col lg="5" md="12" xl="5" sm="12" cols="12" offset-lg="1" offset-xl="1">
                 <div class="timeline_details">
                   <div class="timeline_title_section">
                     <h3 class="t-title">Google</h3>
@@ -272,16 +245,7 @@
                 </div>
               </b-col>
 
-              <b-col
-                lg="5"
-                md="5"
-                xl="5"
-                sm="12"
-                cols="12"
-                offset-lg="1"
-                offset-md="1"
-                offset-xl="1"
-              >
+              <b-col lg="5" md="12" xl="5" sm="12" cols="12" offset-lg="1" offset-xl="1">
                 <div class="timeline_details">
                   <div class="timeline_title_section">
                     <h3 class="t-title">Google</h3>
@@ -310,16 +274,7 @@
 
           <div class="tab_component_wrapper">
             <b-row>
-              <b-col
-                lg="5"
-                md="5"
-                xl="5"
-                sm="12"
-                cols="12"
-                offset-lg="1"
-                offset-md="1"
-                offset-xl="1"
-              >
+              <b-col lg="5" md="12" xl="5" sm="12" cols="12" offset-lg="1" offset-xl="1">
                 <div class="education_details">
                   <div class="education_title_section">
                     <h3 class="e-title">California Institute of Technology</h3>
@@ -337,16 +292,7 @@
                 </div>
               </b-col>
 
-              <b-col
-                lg="5"
-                md="5"
-                xl="5"
-                sm="12"
-                cols="12"
-                offset-lg="1"
-                offset-md="1"
-                offset-xl="1"
-              >
+              <b-col lg="5" md="12" xl="5" sm="12" cols="12" offset-lg="1" offset-xl="1">
                 <div class="education_details">
                   <div class="education_title_section">
                     <h3 class="e-title">California Institute of Technology</h3>
@@ -364,16 +310,7 @@
                 </div>
               </b-col>
 
-              <b-col
-                lg="5"
-                md="5"
-                xl="5"
-                sm="12"
-                cols="12"
-                offset-lg="1"
-                offset-md="1"
-                offset-xl="1"
-              >
+              <b-col lg="5" md="12" xl="5" sm="12" cols="12" offset-lg="1" offset-xl="1">
                 <div class="education_details">
                   <div class="education_title_section">
                     <h3 class="e-title">California Institute of Technology</h3>
@@ -391,16 +328,7 @@
                 </div>
               </b-col>
 
-              <b-col
-                lg="5"
-                md="5"
-                xl="5"
-                sm="12"
-                cols="12"
-                offset-lg="1"
-                offset-md="1"
-                offset-xl="1"
-              >
+              <b-col lg="5" md="12" xl="5" sm="12" cols="12" offset-lg="1" offset-xl="1">
                 <div class="education_details">
                   <div class="education_title_section">
                     <h3 class="e-title">California Institute of Technology</h3>
@@ -548,7 +476,22 @@ span {
 .wrapper_padding {
   padding: 0rem 5rem !important;
   @media (max-width: 767.98px) {
-    padding: 0 2rem;
+    padding: 0 2rem !important;
+  }
+}
+
+.header_section {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  @media (max-width: 767.98px) {
+    min-height: 450px;
+  }
+  @media (max-width: 576.98px) {
+    min-height: 350px;
   }
 }
 
@@ -571,6 +514,17 @@ header {
   min-height: 300px;
   position: relative;
 
+  &::before {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    content: '';
+    z-index: 2;
+  }
+
   .header_bg {
     width: 100%;
     position: absolute;
@@ -586,6 +540,12 @@ header {
   border-radius: 50%;
   margin: 0 auto;
   max-width: 150px;
+
+  @media (max-width: 576.98px) {
+    max-width: auto;
+    height: 80px;
+    width: 80px;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -598,6 +558,14 @@ header {
   display: flex;
 }
 
+.download_area {
+  @media (max-width: 767.98px) {
+    margin-top: 4rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 .contact_media {
   margin-left: 25px;
   @media (max-width: 767.98px) {
@@ -606,47 +574,76 @@ header {
 }
 
 .icon {
-  min-width: 57px;
-  min-height: 57px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 4px solid #fff;
+  border: 3px solid #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-right: 15px;
+
+  @media (max-width: 576.98px) {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    margin-right: 0px;
+  }
   &:last-child {
     margin-right: 0;
   }
   img {
-    width: 20px;
+    width: 17px;
+
+    @media (max-width: 576.98px) {
+      width: 15px;
+    }
   }
 }
 
 .email {
   background: $primary_color;
   border: 0px solid transparent;
+  @media (max-width: 767.98px) {
+    margin-right: 15px;
+  }
   img {
-    width: 27px;
+    width: 21px;
     margin-top: 5px;
+
+    @media (max-width: 576.98px) {
+      width: 20px;
+    }
   }
 }
 
 .download {
   border: 4px solid $primary_color;
+
+  @media (max-width: 576.98px) {
+    border: 2px solid $primary_color;
+  }
   p {
-    font-size: 12px;
+    font-size: 9px;
     text-transform: uppercase;
+    @media (max-width: 576.98px) {
+      font-size: 9px;
+    }
   }
 
   img {
-    width: 15px;
+    width: 10px;
+    @media (max-width: 576.98px) {
+      width: 10px;
+    }
   }
 }
 
-.location {
-  img {
-    width: 17px;
+img {
+  width: 14px;
+  @media (max-width: 576.98px) {
+    width: 13px;
   }
 }
 
@@ -657,6 +654,10 @@ header {
 
   @media (max-width: 767.98px) {
     justify-content: center;
+  }
+
+  @media (max-width: 576.98px) {
+    justify-content: space-between;
   }
 }
 
@@ -671,12 +672,32 @@ header {
   display: none;
   @media (max-width: 767.98px) {
     display: flex;
+    justify-content: center;
   }
 }
 
 .google_plus {
   img {
-    width: 28px;
+    width: 21px;
+
+    @media (max-width: 576.98px) {
+      width: 18px;
+    }
+  }
+}
+
+.hold_on_mobile {
+  @media (max-width: 576.98px) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+  }
+
+  @media (max-width: 767.98px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
   }
 }
 
@@ -685,6 +706,10 @@ header {
     font-family: $font-rubik;
     font-weight: 700;
     font-size: 2rem;
+
+    @media (max-width: 576.98px) {
+      font-size: 1.2rem;
+    }
   }
 
   .designation {
@@ -693,6 +718,12 @@ header {
     font-size: 1.2rem;
     margin-top: 10px;
     margin-bottom: 25px;
+
+    @media (max-width: 576.98px) {
+      font-size: 0.8rem;
+      margin-top: 7px;
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -903,7 +934,7 @@ header {
   .badge_icon {
     position: absolute;
     top: 3px;
-    left: -46px;
+    left: -40px;
     text-transform: initial;
     width: 50px;
     height: 50px;
