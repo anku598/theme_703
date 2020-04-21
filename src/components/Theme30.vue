@@ -7,7 +7,7 @@
           <b-col sm="12" cols="12" md="8" lg="8" xl="8">
             <div class="profile-info">
               <b-row class="hold_on_mobile">
-                <b-col md="2" lg="2" xl="2" sm="3" cols="4">
+                <b-col md="3" lg="2" xl="2" sm="3" cols="4">
                   <div class="pro_pic">
                     <img src="@/assets/img/profile_pic.png" alt="Profile pic" />
                   </div>
@@ -48,7 +48,7 @@
               </b-row>
             </div>
           </b-col>
-          <b-col sm="12" cols="12" md="4" lg="4" xl="4" class="after_tab_screen">
+          <b-col sm="12" cols="12" md="12" lg="4" xl="4" class="after_tab_screen">
             <div class="social_icon">
               <div class="icon">
                 <img src="../assets/img/linkedIn_icon.svg" alt />
@@ -65,7 +65,7 @@
             </div>
           </b-col>
 
-          <b-col sm="12" cols="12" md="4" lg="4" xl="4" class="upto_tab_screen">
+          <b-col sm="12" cols="12" md="12" lg="4" xl="4" class="upto_tab_screen">
             <div class="social_icon">
               <div class="icon location">
                 <img src="../assets/img/location_icon.svg" alt />
@@ -153,27 +153,27 @@
           <div class="tab_component_wrapper">
             <div class="portfolio-work">
               <b-row>
-                <b-col md="4" lg="4" xl="4" sm="12" cols="12" class="p-3">
+                <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="p-3">
                   <img src="../assets/img/portfolio-one.png" alt />
                 </b-col>
 
-                <b-col md="4" lg="4" xl="4" sm="12" cols="12" class="p-3">
+                <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="p-3">
                   <img src="../assets/img/portfolio-two.jpg" alt />
                 </b-col>
 
-                <b-col md="4" lg="4" xl="4" sm="12" cols="12" class="p-3">
+                <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="p-3">
                   <img src="../assets/img/portfolio-three.jpg" alt />
                 </b-col>
 
-                <b-col md="4" lg="4" xl="4" sm="12" cols="12" class="p-3">
+                <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="p-3">
                   <img src="../assets/img/portfolio-four.png" alt />
                 </b-col>
 
-                <b-col md="4" lg="4" xl="4" sm="12" cols="12" class="p-3">
+                <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="p-3">
                   <img src="../assets/img/portfolio-three.jpg" alt />
                 </b-col>
 
-                <b-col class="p-3" md="4" lg="4" xl="4" sm="12" cols="12">
+                <b-col class="p-3" md="12" lg="4" xl="4" sm="12" cols="12">
                   <img src="../assets/img/portfolio-four.png" alt />
                 </b-col>
               </b-row>
@@ -475,7 +475,7 @@ span {
 
 .wrapper_padding {
   padding: 0rem 5rem !important;
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     padding: 0 2rem !important;
   }
 }
@@ -487,7 +487,7 @@ span {
   justify-content: center;
   position: relative;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     min-height: 450px;
   }
   @media (max-width: 576.98px) {
@@ -559,7 +559,7 @@ header {
 }
 
 .download_area {
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     margin-top: 4rem;
     width: 100%;
     justify-content: center;
@@ -568,7 +568,7 @@ header {
 
 .contact_media {
   margin-left: 25px;
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     display: none;
   }
 }
@@ -605,7 +605,7 @@ header {
 .email {
   background: $primary_color;
   border: 0px solid transparent;
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     margin-right: 15px;
   }
   img {
@@ -652,7 +652,7 @@ img {
   justify-content: flex-end;
   width: 100%;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     justify-content: center;
   }
 
@@ -663,14 +663,14 @@ img {
 
 .after_tab_screen {
   display: none;
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     display: block;
   }
 }
 
 .upto_tab_screen {
   display: none;
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     display: flex;
     justify-content: center;
   }
@@ -693,7 +693,7 @@ img {
     margin-bottom: 23px;
   }
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -717,7 +717,11 @@ img {
     font-weight: 300;
     font-size: 1.2rem;
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 25px;
+    }
 
     @media (max-width: 576.98px) {
       font-size: 0.8rem;
@@ -781,7 +785,7 @@ img {
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -790,7 +794,7 @@ img {
 .timeline_title_section {
   margin-bottom: 5rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     margin-bottom: 3rem;
   }
 }
@@ -830,7 +834,7 @@ img {
 .time_duration {
   font-family: $font-roboto;
   font-size: 14px;
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     margin-bottom: 2rem;
   }
   p {

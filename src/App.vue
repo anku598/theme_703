@@ -93,11 +93,14 @@ $font-open-sans: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   transition: all 0.3s ease-in-out !important ;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     padding: 0.5rem 0.8rem !important;
     margin-right: 15px !important;
     font-size: 0.8rem;
-    min-width: 181px;
+  }
+
+  @media (max-width: 767.98px) {
+    min-width: 181px !important;
   }
 
   &:hover {
@@ -140,7 +143,7 @@ $font-open-sans: 'Open Sans', sans-serif;
 .skill-tab-30 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     overflow-x: scroll;
     flex-wrap: nowrap;
   }
