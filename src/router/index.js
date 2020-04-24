@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Theme703 from '../components/Theme703'
+import Theme29v1 from '../components/Theme29v1.vue'
 
 Vue.use(VueRouter)
 
 const routes = [{
     path: '/',
-    name: 'Theme703',
-    component: Theme703
+    name: 'Theme29v1',
+    component: Theme29v1
   },
   // {
   //   path: '/about',
