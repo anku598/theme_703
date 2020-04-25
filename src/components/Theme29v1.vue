@@ -1,7 +1,85 @@
 <template>
   <div class="hold_theme_29v1">
     <b-container fluid class="header">
-      <b-row></b-row>
+      <div class="hold_profile_wrapper">
+        <img class="piramid_pattern" src="../assets/img/piramid_patter.svg" alt="Piramid" />
+        <img class="cylindar_pattern" src="../assets/img/cilinder_pattern.svg" alt="Piramid" />
+        <b-row class="d-flex align-items-center">
+          <b-col lg="5" xl="5" md="12" sm="12" cols="12" class="profile_info">
+            <b-row class="d-flex align-items-center">
+              <b-col lg="3" xl="3" md="3" sm="3" cols="3">
+                <b-img
+                  class="user_pic"
+                  fluid
+                  src="../assets/img/profile_picture.png"
+                  rounded="circle"
+                  alt="Profile_picture"
+                ></b-img>
+              </b-col>
+
+              <b-col lg="8" xl="8" md="8" sm="8" cols="8">
+                <div class="profile_desc">
+                  <h3 class="name">Beverly Andrews</h3>
+                  <p class="designation">User interface designer</p>
+                  <div class="other_icons">
+                    <div class="rounded_icon share_icon">
+                      <b-img fluid src="../assets/img/share_icon.svg" alt></b-img>
+                    </div>
+                    <div class="rounded_icon">
+                      <b-img fluid src="../assets/img/audio_icon.svg" alt></b-img>
+                    </div>
+                    <div class="rounded_icon">
+                      <b-img fluid src="../assets/img/camera_icon.svg" alt></b-img>
+                    </div>
+                  </div>
+                </div>
+              </b-col>
+            </b-row>
+          </b-col>
+
+          <b-col lg="4" xl="4" md="12" sm="12" cols="12">
+            <p class="link-text">link to my profiles</p>
+            <div class="social_media_link">
+              <a href="#" class="rounded_icon">
+                <b-img fluid src="../assets/img/behance_icon.svg"></b-img>
+              </a>
+              <a href="#" class="rounded_icon">
+                <b-img fluid src="../assets/img/dribble_icon.svg"></b-img>
+              </a>
+
+              <a href="#" class="rounded_icon">
+                <b-img fluid src="../assets/img/instagram_icon.svg"></b-img>
+              </a>
+
+              <a href="#" class="rounded_icon">
+                <b-img fluid src="../assets/img/linkedIn_icon.svg"></b-img>
+              </a>
+
+              <a href="#" class="rounded_icon">
+                <b-img fluid src="../assets/img/google_plus_icon.svg"></b-img>
+              </a>
+            </div>
+          </b-col>
+
+          <b-col lg="3" xl="3" md="12" sm="12" cols="12" class="hire_me_section">
+            <b-row>
+              <b-col lg="6" xl="6" md="6" sm="6" cols="6">
+                <p class="hire_text">Hire Me</p>
+                <span class="price">$ 25 USD</span>
+              </b-col>
+
+              <b-col lg="6" xl="6" md="6" sm="6" cols="6" class="text-right left-border">
+                <p class="hire_text">Available For</p>
+                <span class="price">8 hours</span>
+              </b-col>
+            </b-row>
+
+            <div class="hire_btn">
+              <b-button pill class="hr_btn">Hire Me</b-button>
+            </div>
+          </b-col>
+        </b-row>
+      </div>
     </b-container>
 
     <div class="navigation">
@@ -11,7 +89,9 @@
       <b-tabs v-model="tabIndex" content-class="mt-3" fill nav-class="nav-tab-29v1">
         <b-tab class="addHere" :title-link-class="[linkClass(0), 'tab_29v1']">
           <template v-slot:title>
-            <img src="../assets/img/portfolio_icon.svg" alt />
+            <div class="rounded_icon b-tab-icon">
+              <b-img fluid src="../assets/img/portfolio_icon.svg"></b-img>
+            </div>
             <p>Portfolio</p>
           </template>
 
@@ -47,7 +127,9 @@
         </b-tab>
         <b-tab class="addHere" :title-link-class="[linkClass(1), 'tab_29v1']">
           <template v-slot:title>
-            <img src="../assets/img/work_icon.svg" alt />
+            <div class="rounded_icon b-tab-icon">
+              <b-img fluid src="../assets/img/work_icon.svg"></b-img>
+            </div>
             <p>Work</p>
           </template>
 
@@ -175,7 +257,9 @@
         </b-tab>
         <b-tab class="addHere" :title-link-class="[linkClass(2), 'tab_29v1']">
           <template v-slot:title>
-            <img src="../assets/img/education_icon.svg" alt />
+            <div class="rounded_icon b-tab-icon">
+              <b-img fluid src="../assets/img/education_icon.svg"></b-img>
+            </div>
             <p>Education</p>
           </template>
 
@@ -279,7 +363,9 @@
         </b-tab>
         <b-tab class="addHere" :title-link-class="[linkClass(3), 'tab_29v1']">
           <template v-slot:title>
-            <img src="../assets/img/skills_icon.svg" alt />
+            <div class="rounded_icon b-tab-icon">
+              <b-img fluid src="../assets/img/skills_icon.svg"></b-img>
+            </div>
             <p>Skills</p>
           </template>
 
@@ -373,16 +459,16 @@ export default {
   methods: {
     linkClass(idx) {
       if (this.tabIndex === idx) {
-        return ['active-tab-703'];
+        return ['active-tab-29v1'];
       } else {
         return ['text-light'];
       }
     },
     SkilllinkClass(idx) {
       if (this.skillTabIndex === idx) {
-        return ['active-skill-tab-30'];
+        return ['active-skill-tab-29v1'];
       } else {
-        return ['text-light'];
+        return [''];
       }
     }
   }
@@ -421,16 +507,208 @@ span {
   width: 100%;
   height: 100vh;
   background: #fff;
-  color: #fff;
+  color: #000;
   overflow-x: hidden;
 }
 
 .header {
-  min-height: 300px;
+  min-height: 450px;
   width: 100%;
   margin: 0 auto;
   position: relative;
   background: $secondary-color;
+}
+
+.hold_profile_wrapper {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  margin: 0 auto;
+  padding: 5rem 0;
+  position: relative;
+
+  .piramid_pattern {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 80px;
+    opacity: 0.5;
+  }
+
+  .cylindar_pattern {
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+    width: 80px;
+    opacity: 0.5;
+  }
+}
+
+.user_pic {
+  min-width: 70px;
+}
+
+.profile_info {
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(52, 96, 191, 0.05);
+  border-radius: 30px;
+  padding: 3rem 2rem;
+  @media (max-width: 576.98px) {
+    padding: 3rem 1rem;
+  }
+
+  @media (max-width: 991.98px) {
+    margin-bottom: 2rem;
+  }
+}
+
+.name {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.1rem;
+  line-height: 50px;
+  color: $primary-color;
+  text-transform: capitalize;
+
+  @media (max-width: 576.98px) {
+    font-size: 1.3rem;
+    line-height: 35px;
+  }
+}
+
+.designation {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 1.1rem;
+
+  @media (max-width: 576.98px) {
+    font-size: 15px;
+  }
+}
+
+.other_icons {
+  display: flex;
+  align-items: center;
+}
+
+.rounded_icon {
+  background: #71bfff;
+  box-shadow: 0px 15px 30px rgba(252, 214, 105, 0.19);
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+
+  &.b-tab-icon {
+    background: #a5b4ff;
+    margin-right: 0 !important;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: 576.98px) {
+    width: 40px;
+    height: 40px;
+  }
+  &.share_icon {
+    background: $primary-color;
+    width: 55px;
+    @media (max-width: 576.98px) {
+      width: 45px;
+    }
+  }
+  img {
+    padding: 13px;
+  }
+}
+
+.link-text {
+  text-align: center;
+  margin-bottom: 1.3rem;
+  font-family: $font-lato;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.social_media_link {
+  display: flex;
+  justify-content: center;
+  .rounded_icon {
+    box-shadow: 0px 15px 30px rgba(71, 170, 251, 0.2);
+  }
+}
+
+.hire_text {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: $primary-color;
+}
+
+.price {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 37px;
+  color: #404040;
+}
+
+.hire_me_section {
+  @media (max-width: 991.98px) {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 576.98px) {
+    max-width: 100%;
+  }
+}
+
+.hire_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  .hr_btn {
+    padding: 0.8rem 4rem;
+    background: $primary-color;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: $font-roboto;
+    font-weight: 900;
+    font-size: 15px;
+  }
+}
+
+.left-border {
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 45px;
+    background: $primary-color;
+    content: '';
+    transform: translateY(-50%);
+  }
 }
 
 .navigation {

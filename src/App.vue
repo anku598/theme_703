@@ -5,127 +5,74 @@
 </template>
 
 <style lang='scss'>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Rubik:400,700&display=swap');
-$primary_color: #ed0000;
-$font-rubik: 'Rubik', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,500,300,700&display=swap');
+
+$primary-color: #3852ce;
+$secondary-color: #e5f1ff;
 $font-roboto: 'Roboto', sans-serif;
-$font-open-sans: 'Open Sans', sans-serif;
+$font-lato: 'Lato', sans-serif;
 .tab_29v1 {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  padding: 1.2rem 1rem !important;
+  padding: 1rem 2rem !important;
   border: none !important;
   outline: none !important;
-  color: #c7c7c7 !important;
-  font-size: 1.6rem;
+  color: #a5b4ff !important;
+  background: #fff !important;
+  font-size: 1.3rem;
   transition: all 0.3s ease-in-out !important ;
-  .tab_icon {
-    margin-right: 12px;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    width: 20px;
-    height: 20px;
-    border: 3px solid $primary_color;
-    display: block;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-    font-family: $font-rubik;
-    font-weight: 700;
-    color: #000;
-    transition: all 0.3s ease-in-out !important ;
-  }
-  @media (max-width: 767.98px) {
-    padding: 0.5rem 0.8rem !important;
-    margin-right: 15px !important;
-  }
-  &:hover {
-    border: none !important;
-  }
-  img {
-    margin-right: 20px;
-    @media (max-width: 767.98px) {
-      margin-right: 13px;
-      width: 16px;
-    }
+  box-shadow: 0px 10px 30px rgba(52, 96, 191, 0.05);
+  border-radius: 30px !important;
+  margin-right: 4rem !important;
+  font-family: $font-roboto;
+  font-weight: 400;
+
+  p {
+    margin-left: 15px !important;
   }
 }
 .active-tab-29v1 {
-  color: #000 !important;
+  color: $primary-color !important;
   border: none !important;
-  font-family: $font-rubik;
-  font-weight: 700;
   transition: all 0.3s ease-in-out !important ;
-  .tab_icon {
-    background: $primary_color;
-    color: #fff;
-  }
 }
-.nav-tab-29 {
+.nav-tab-29v1 {
   border-bottom: 0px solid #000 !important;
-  @media (max-width: 767.98px) {
+
+  @media (max-width: 1231px) {
     overflow-x: scroll;
     flex-wrap: nowrap;
   }
 }
-.skill_tab_29v1 {
+
+.nav-tab-29v1 {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  padding: 1.2rem 1rem !important;
-  border: none !important;
-  outline: none !important;
-  color: rgba(0, 0, 0, 0.5) !important;
-  font-size: 1.2rem;
-  transition: all 0.3s ease-in-out !important ;
-  @media (max-width: 991.98px) {
-    padding: 0.5rem 0.8rem !important;
-    margin-right: 15px !important;
-    font-size: 0.8rem;
-  }
-  @media (max-width: 767.98px) {
-    min-width: 181px !important;
-  }
-  &:hover {
-    border: none !important;
-  }
-  img {
-    margin-right: 20px;
-    @media (max-width: 767.98px) {
-      margin-right: 13px;
-      width: 16px;
-    }
-  }
+  border-bottom: 0 !important;
+  max-width: 85%;
+  margin: 0 auto;
+  margin-top: -35px;
 }
-.active-skill-tab-29v1 {
-  color: $primary_color !important;
-  font-family: $font-rubik;
-  font-weight: 700;
-  transition: all 0.3s ease-in-out !important ;
-  background-color: transparent !important;
-  position: relative;
-  &:before {
-    position: absolute;
-    bottom: 0;
-    width: 130px;
-    height: 4px;
-    background: $primary_color;
-    content: '';
-    left: 50%;
-    transform: translateX(-50%);
-    @media (max-width: 576.98px) {
-      width: 75px;
-    }
-  }
-}
+
 .skill-tab-29v1 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
-  @media (max-width: 991.98px) {
-    overflow-x: scroll;
-    flex-wrap: nowrap;
-  }
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 7rem;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.active-skill-tab-29v1 {
+  border: none !important;
+  font-family: $font-lato;
+  font-weight: 700;
+  color: $primary-color !important;
+  text-shadow: 0px 4px 30px rgba(81, 235, 247, 0.4) !important;
+}
+
+.skill_tab_29 {
+  color: rgba(64, 64, 64, 0.51) !important;
 }
 </style>
