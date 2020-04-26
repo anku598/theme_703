@@ -62,17 +62,43 @@ $font-lato: 'Lato', sans-serif;
   margin-top: 7rem;
   border: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 991.98px) {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
 }
 
-.active-skill-tab-29v1 {
-  border: none !important;
-  font-family: $font-lato;
-  font-weight: 700;
-  color: $primary-color !important;
-  text-shadow: 0px 4px 30px rgba(81, 235, 247, 0.4) !important;
-}
+a {
+  &.skill_tab_29v1 {
+    color: #c5c5c5 !important;
+    outline: none !important;
+    padding-bottom: 1.3rem !important;
 
-.skill_tab_29 {
-  color: rgba(64, 64, 64, 0.51) !important;
+    &:hover {
+      border: none !important;
+    }
+  }
+
+  &.active-skill-tab-29v1 {
+    border: none !important;
+    font-family: $font-lato;
+    font-weight: 700;
+    color: $primary-color !important;
+    text-shadow: 0px 4px 30px rgba(81, 235, 247, 0.4) !important;
+    position: relative;
+    &:before {
+      position: absolute;
+      bottom: -4px;
+      width: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 4px;
+      background: $primary-color;
+      box-shadow: 2px 5px 30px rgba(192, 18, 159, 0.37) !important;
+      border-radius: 15px !important;
+      content: '';
+    }
+  }
 }
 </style>

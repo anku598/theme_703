@@ -389,10 +389,21 @@
                       class="mb-4"
                     >
                       <b-row>
-                        <b-col lg="3" xl="3" sm="3" md="3" cols="3" class="text-center">
+                        <b-col
+                          lg="3"
+                          xl="3"
+                          sm="3"
+                          md="3"
+                          cols="3"
+                          class="text-center d-none d-lg-block"
+                        >
                           <div class="skill_badge">{{bar.label}}</div>
                         </b-col>
-                        <b-col lg="6" xl="6" sm="6" md="6" cols="6" align-self="center">
+                        <b-col lg="6" xl="6" sm="12" md="12" cols="12" align-self="center">
+                          <div class="label d-flex d-lg-none">
+                            <div class="skill_badge">{{bar.label}}</div>
+                            <div>{{bar.value}} %</div>
+                          </div>
                           <b-progress class="w-100">
                             <b-progress-bar
                               :value="bar.value"
@@ -401,7 +412,7 @@
                           </b-progress>
                         </b-col>
                         <b-col
-                          class="text-center"
+                          class="text-center d-none d-lg-block"
                           lg="3"
                           xl="3"
                           sm="3"
@@ -414,19 +425,19 @@
                 </div>
               </b-tab>
 
-              <b-tab class="addHere" :title-link-class="[SkilllinkClass(1), 'skill_tab_29' ]">
+              <b-tab class="addHere" :title-link-class="[SkilllinkClass(1), 'skill_tab_29v1' ]">
                 <template v-slot:title>
                   <p>Frameworks/Database</p>
                 </template>
               </b-tab>
 
-              <b-tab class="addHere" :title-link-class="[SkilllinkClass(2), 'skill_tab_29' ]">
+              <b-tab class="addHere" :title-link-class="[SkilllinkClass(2), 'skill_tab_29v1' ]">
                 <template v-slot:title>
                   <p>Design Skills</p>
                 </template>
               </b-tab>
 
-              <b-tab class="addHere" :title-link-class="[SkilllinkClass(3), 'skill_tab_29' ]">
+              <b-tab class="addHere" :title-link-class="[SkilllinkClass(3), 'skill_tab_29v1' ]">
                 <template v-slot:title>
                   <p>Software</p>
                 </template>
@@ -849,5 +860,20 @@ span {
 
 .skill_badge {
   text-align: left;
+}
+
+.progress {
+  background: #efefef;
+  border-radius: 15px;
+}
+
+.progress-bar {
+  box-shadow: 2px 5px 30px rgba(113, 191, 255, 0.24);
+  border-radius: 15px;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
 }
 </style>
