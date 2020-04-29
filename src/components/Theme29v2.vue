@@ -1,5 +1,5 @@
 <template>
-  <div class="hold_theme_29v1">
+  <div class="hold_theme_29v2">
     <b-container fluid class="header">
       <div class="hold_profile_wrapper">
         <img class="piramid_pattern" src="../assets/img/piramid_patter.svg" alt="Piramid" />
@@ -86,8 +86,8 @@
       <div class="body_icon">
         <img src="@/assets/img/body_icon.svg" alt />
       </div>
-      <b-tabs v-model="tabIndex" content-class="mt-3" fill nav-class="nav-tab-29v1">
-        <b-tab class="addHere" :title-link-class="[linkClass(0), 'tab_29v1']">
+      <b-tabs v-model="tabIndex" content-class="mt-3" fill nav-class="nav-tab-29v2">
+        <b-tab class="addHere" :title-link-class="[linkClass(0), 'tab_29v2']">
           <template v-slot:title>
             <div class="rounded_icon b-tab-icon">
               <b-img fluid src="../assets/img/portfolio_icon.svg"></b-img>
@@ -125,7 +125,7 @@
             </b-container>
           </div>
         </b-tab>
-        <b-tab class="addHere" :title-link-class="[linkClass(1), 'tab_29v1']">
+        <b-tab class="addHere" :title-link-class="[linkClass(1), 'tab_29v2']">
           <template v-slot:title>
             <div class="rounded_icon b-tab-icon">
               <b-img fluid src="../assets/img/work_icon.svg"></b-img>
@@ -255,7 +255,7 @@
             </b-container>
           </div>
         </b-tab>
-        <b-tab class="addHere" :title-link-class="[linkClass(2), 'tab_29v1']">
+        <b-tab class="addHere" :title-link-class="[linkClass(2), 'tab_29v2']">
           <template v-slot:title>
             <div class="rounded_icon b-tab-icon">
               <b-img fluid src="../assets/img/education_icon.svg"></b-img>
@@ -361,7 +361,7 @@
             </b-container>
           </div>
         </b-tab>
-        <b-tab class="addHere" :title-link-class="[linkClass(3), 'tab_29v1']">
+        <b-tab class="addHere" :title-link-class="[linkClass(3), 'tab_29v2']">
           <template v-slot:title>
             <div class="rounded_icon b-tab-icon">
               <b-img fluid src="../assets/img/skills_icon.svg"></b-img>
@@ -370,8 +370,8 @@
           </template>
 
           <div class="tab_component_wrapper">
-            <b-tabs v-model="skillTabIndex" content-class="mt-3" fill nav-class="skill-tab-29v1">
-              <b-tab class="addHere" :title-link-class="[SkilllinkClass(0), 'skill_tab_29v1' ]">
+            <b-tabs v-model="skillTabIndex" content-class="mt-3" fill nav-class="skill-tab-29v2">
+              <b-tab class="addHere" :title-link-class="[SkilllinkClass(0), 'skill_tab_29v2' ]">
                 <template v-slot:title>
                   <p>Programming Language</p>
                 </template>
@@ -425,19 +425,19 @@
                 </div>
               </b-tab>
 
-              <b-tab class="addHere" :title-link-class="[SkilllinkClass(1), 'skill_tab_29v1' ]">
+              <b-tab class="addHere" :title-link-class="[SkilllinkClass(1), 'skill_tab_29v2' ]">
                 <template v-slot:title>
                   <p>Frameworks/Database</p>
                 </template>
               </b-tab>
 
-              <b-tab class="addHere" :title-link-class="[SkilllinkClass(2), 'skill_tab_29v1' ]">
+              <b-tab class="addHere" :title-link-class="[SkilllinkClass(2), 'skill_tab_29v2' ]">
                 <template v-slot:title>
                   <p>Design Skills</p>
                 </template>
               </b-tab>
 
-              <b-tab class="addHere" :title-link-class="[SkilllinkClass(3), 'skill_tab_29v1' ]">
+              <b-tab class="addHere" :title-link-class="[SkilllinkClass(3), 'skill_tab_29v2' ]">
                 <template v-slot:title>
                   <p>Software</p>
                 </template>
@@ -452,7 +452,7 @@
 
 <script>
 export default {
-  name: 'Theme703',
+  name: 'Theme29v2',
   data() {
     return {
       tabIndex: 0,
@@ -470,14 +470,14 @@ export default {
   methods: {
     linkClass(idx) {
       if (this.tabIndex === idx) {
-        return ['active-tab-29v1'];
+        return ['active-tab-29v2'];
       } else {
         return ['text-light'];
       }
     },
     SkilllinkClass(idx) {
       if (this.skillTabIndex === idx) {
-        return ['active-skill-tab-29v1'];
+        return ['active-skill-tab-29v2'];
       } else {
         return [''];
       }
@@ -514,10 +514,10 @@ span {
   margin: 0;
   padding: 0;
 }
-.hold_theme_29v1 {
+.hold_theme_29v2 {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(125.55deg, #ffffff 10.06%, #ffffff 75.33%);
+  background: #fff;
   color: #000;
   overflow-x: hidden;
 }
@@ -528,25 +528,17 @@ span {
   margin: 0 auto;
   position: relative;
   background: $secondary-color;
-
-  @media (max-width: 576.98px) {
-    padding-bottom: 3rem;
-  }
 }
 
 .hold_profile_wrapper {
-  min-height: 400px;
+  min-height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 95%;
   margin: 0 auto;
   padding: 5rem 0;
-  padding-top: 0;
   position: relative;
-  @media (max-width: 991.98px) {
-    padding-top: 3rem;
-  }
 
   .piramid_pattern {
     position: absolute;
@@ -554,12 +546,6 @@ span {
     left: 50%;
     width: 80px;
     opacity: 0.5;
-
-    @media (max-width: 991.98px) {
-      right: -46px;
-      left: inherit;
-      width: 100px;
-    }
   }
 
   .cylindar_pattern {
@@ -745,10 +731,6 @@ span {
     width: 10%;
     max-width: 120px;
     min-width: 70px;
-
-    @media (max-width: 576.98px) {
-      top: -47px;
-    }
     img {
       width: 100%;
     }
@@ -760,10 +742,6 @@ span {
   margin: 0 auto;
   margin-bottom: 2rem;
   margin-top: 6rem;
-
-  @media (max-width: 576.98px) {
-    margin-top: 3rem;
-  }
 }
 
 .work_wrapper {
@@ -774,10 +752,8 @@ span {
 
 .portfolio_img {
   padding-bottom: 30px;
-  // box-shadow: 0px 15px 30px rgba(113, 130, 224, 0.19);
   img {
     box-shadow: 0px 15px 30px rgba(113, 130, 224, 0.19);
-    border-radius: 36px;
   }
 }
 

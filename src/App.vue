@@ -19,14 +19,27 @@ $font-lato: 'Lato', sans-serif;
   border: none !important;
   outline: none !important;
   color: #a5b4ff !important;
-  background: #fff !important;
+  background: #fafafa !important;
   font-size: 1.3rem;
   transition: all 0.3s ease-in-out !important ;
   box-shadow: 0px 10px 30px rgba(52, 96, 191, 0.05);
   border-radius: 30px !important;
-  margin-right: 4rem !important;
+  margin-right: 48px !important;
   font-family: $font-roboto;
   font-weight: 400;
+
+  @media (max-width: 768px) {
+    margin-right: 17px !important;
+    &:first-child {
+      // margin-left: 102px !important;
+    }
+  }
+
+  // @media (max-width: 576.98px) {
+  //   &:first-child {
+  //     margin-left: 40rem !important;
+  //   }
+  // }
 
   p {
     margin-left: 15px !important;
@@ -36,6 +49,12 @@ $font-lato: 'Lato', sans-serif;
   color: $primary-color !important;
   border: none !important;
   transition: all 0.3s ease-in-out !important ;
+  background: #fff !important;
+  transition: all 0.3s ease-in-out !important;
+  .b-tab-icon {
+    background: $primary-color !important;
+    transition: all 0.3s ease-in-out !important;
+  }
 }
 .nav-tab-29v1 {
   border-bottom: 0px solid #000 !important;
@@ -54,6 +73,14 @@ $font-lato: 'Lato', sans-serif;
   max-width: 85%;
   margin: 0 auto;
   margin-top: -35px;
+
+  @media (max-width: 768px) {
+    max-width: 100% !important;
+    justify-content: flex-start !important;
+    padding-bottom: 1rem;
+    margin: 0 0 !important;
+    margin-top: -35px !important;
+  }
 }
 
 .skill-tab-29v1 {
