@@ -152,31 +152,45 @@
 
           <div class="tab_component_wrapper">
             <div class="portfolio-work">
-              <b-row>
-                <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="p-3">
-                  <img src="../assets/img/portfolio-one.png" alt />
-                </b-col>
+              <b-container fluid>
+                <b-row>
+                  <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="custom-image-margin">
+                    <div class="image-wrap">
+                      <img src="../assets/img/portfolio-one.png" alt />
+                    </div>
+                  </b-col>
 
-                <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="p-3">
-                  <img src="../assets/img/portfolio-two.jpg" alt />
-                </b-col>
+                  <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="custom-image-margin">
+                    <div class="image-wrap">
+                      <img src="../assets/img/portfolio-four.png" alt />
+                    </div>
+                  </b-col>
 
-                <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="p-3">
-                  <img src="../assets/img/portfolio-three.jpg" alt />
-                </b-col>
+                  <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="custom-image-margin">
+                    <div class="image-wrap">
+                      <img src="../assets/img/portfolio-three.jpg" alt />
+                    </div>
+                  </b-col>
 
-                <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="p-3">
-                  <img src="../assets/img/portfolio-four.png" alt />
-                </b-col>
+                  <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="custom-image-margin">
+                    <div class="image-wrap">
+                      <img src="../assets/img/portfolio-four.png" alt />
+                    </div>
+                  </b-col>
 
-                <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="p-3">
-                  <img src="../assets/img/portfolio-three.jpg" alt />
-                </b-col>
+                  <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="custom-image-margin">
+                    <div class="image-wrap">
+                      <img src="../assets/img/portfolio-three.jpg" alt />
+                    </div>
+                  </b-col>
 
-                <b-col class="p-3" md="12" lg="4" xl="4" sm="12" cols="12">
-                  <img src="../assets/img/portfolio-four.png" alt />
-                </b-col>
-              </b-row>
+                  <b-col md="12" lg="4" xl="4" sm="12" cols="12" class="custom-image-margin">
+                    <div class="image-wrap">
+                      <img src="../assets/img/portfolio-four.png" alt />
+                    </div>
+                  </b-col>
+                </b-row>
+              </b-container>
             </div>
           </div>
         </b-tab>
@@ -772,10 +786,25 @@ img {
   margin-bottom: 15px;
 }
 
+.custom-image-margin {
+  margin-bottom: 30px;
+}
+
 .portfolio-work {
+  .image-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 75%;
+  }
   img {
     width: 100%;
     border-radius: 30px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    margin-bottom: 30px;
   }
 }
 
